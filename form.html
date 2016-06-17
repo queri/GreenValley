@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Green Valley</title>
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="page-header__inner">
+      <a href="#" class="main-logo"><img src="" alt=""></a>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">Номера</a></li>
+          <li class="main-nav__item"><a href="#">Коттедж</a></li>
+          <li class="main-nav__item"><a href="#">Ресторан</a></li>
+          <li class="main-nav__item"><a href="#">Отдых</a></li>
+          <li class="main-nav__item"><a href="#">Контакты</a></li>
+        </ul>
+        <div class="main-nav__toggler"><span></span></div>
+      </nav>
+      <div class="page-header__contacts">
+        <a href="" class="page-header__phone">+7 812 777-55-88</a>
+        <div class="page-header__address">г. Санкт-Петербург, Приморское ш.600</div>
+      </div>
+    </div>
+    <a href="" class="btn  btn--icon-calendar">Забронировать</a>
+  </header>
+
+  <form action="" class="booking-form">
+    <h1 class="booking-form__title">Бронирование</h1>
+    <p class="booking-form__text">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону:<a href="" class="booking-form__phone">+7 812 777</a></p>
+    <fieldset class="booking-block">
+      <span class="booking-block__step">Шаг 1</span>
+      <h2 class="booking-block__title">Дата отдыха</h2>
+      <div class="booking-block__input-block">
+        <h3 class="booking-block__input-title">Дата въезда</h3>
+        <div class="booking-block__input-date">
+          <input type="text" placeholder="ДД">
+          <input type="text" placeholder="ММ">
+          <input type="text" placeholder="ГГГГ">
+        </div>
+        <h3 class="booking-block__input-title">Дата выезда</h3>
+        <div class="booking-block__input-date">
+          <input type="text" placeholder="ДД">
+          <input type="text" placeholder="ММ">
+          <input type="text" placeholder="ГГГГ">
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="booking-block">
+      <div class="booking-block__living-choice">
+        <span class="booking-block__step">Шаг 2</span>
+        <h2 class="booking-block__title">Место проживания</h2>
+        <div class="booking-block__input-block">
+          <label for="hotel" class="booking-block__label  booking-block__label--hotel-label">Отель</label>
+          <input type="radio" name="living-choice" value="hotel" id="hotel">
+          <label for="cottage" class="booking-block__label  booking-block__label--cottage-label">Коттедж</label>
+          <input type="radio" name="living-choice" value="cottage" id="cottage">
+        </div>
+      </div>
+      <div class="booking-block__living-type">
+        <span class="booking-block__step">Шаг 3</span>
+        <h2 class="booking-block__title">Тип коттеджа</h2>
+        <div class="booking-block__input-block  booking-block__input-block--wide">
+          <label for="cottage-1" class="booking-block__label  booking-block__label--cottage-1">Флагман</label>
+          <input type="radio" name="cottage-type" value="cottage-1" id="cottage-1">
+          <label for="cottage-2" class="booking-block__label  booking-block__label--cottage-2">Озерный</label>
+          <input type="radio" name="cottage-type" value="cottage-2" id="cottage-2">
+          <label for="cottage-3" class="booking-block__label  booking-block__label--cottage-3">Ольховка</label>
+          <input type="radio" name="cottage-type" value="cottage-3" id="cottage-3">
+          <label for="cottage-4" class="booking-block__label  booking-block__label--cottage-4">Портовый</label>
+          <input type="radio" name="cottage-type" value="cottage-4" id="cottage-4">
+        </div>
+        <ul class="booking-block__type-list">
+          <li class="booking-block__type-list-item"></li>
+          <li class="booking-block__type-list-item"></li>
+          <li class="booking-block__type-list-item"></li>
+          <li class="booking-block__type-list-item"></li>
+          <li class="booking-block__type-list-item"></li>
+        </ul>
+      </div>
+      <div class="booking-block__living-type">
+        <span class="booking-block__step">Шаг 3</span>
+        <h2 class="booking-block__title">Тип номера</h2>
+        <div class="booking-block__input-block  booking-block__input-block--wide">
+          <label for="room-1" class="booking-block__label  booking-block__label--room-1">Эконом</label>
+          <input type="radio" name="room-type" value="room-1" id="room-1">
+          <label for="room-2" class="booking-block__label  booking-block__label--room-2">Стандарт</label>
+          <input type="radio" name="room-type" value="room-2" id="room-2">
+          <label for="room-3" class="booking-block__label  booking-block__label--room-3">Стандарт+</label>
+          <input type="radio" name="room-type" value="room-3" id="room-3">
+          <label for="room-4" class="booking-block__label  booking-block__label--room-4">Люкс</label>
+          <input type="radio" name="room-type" value="room-4" id="room-4">
+        </div>
+        <ul class="booking-block__type-list">
+          <li class="booking-block__type-list-item"></li>
+          <li class="booking-block__type-list-item"></li>
+          <li class="booking-block__type-list-item"></li>
+          <li class="booking-block__type-list-item"></li>
+          <li class="booking-block__type-list-item"></li>
+        </ul>
+      </div>
+    </fieldset>
+    <fieldset class="booking-block">
+      <span class="booking-block__step">Шаг 4</span>
+      <h2 class="booking-block__title">Персональная информация</h2>
+      <div class="booking-block__input-info">
+        <input type="text" placeholder="Имя">
+      </div>
+      <div class="booking-block__input-info">
+        <input type="text" placeholder="Фамилия">
+      </div>
+      <div class="booking-block__input-with-text">
+        <input type="text" placeholder="Номер телефона">
+        <p class="booking-block__input-dscr">Мы свяжемся с вами в случае необходимости.</p>
+      </div>
+      <div class="booking-block__input-with-text">
+        <input type="text" placeholder="E-mail">
+        <p class="booking-block__input-dscr">На этот адрес мы вышлем вам подтверждение о забронированном номере.</p>
+      </div>
+    </fieldset>
+    <fieldset class="booking-block">
+      <span class="booking-block__step">Шаг 5</span>
+      <h2 class="booking-block__title">Способ оплаты</h2>
+
+    </fieldset>
+  </form>
+
+  <footer class="page-footer">
+    <div class="page-footer__inner">
+      <div class="page-footer__address">г. Санкт-Петербург<br/>Приморское ш.600</div>
+      <a href="" class="page-footer__logo"><img src=" " alt=""></a>
+      <div class="page-footer__icons">
+        <a href="" class="page-footer__icons-item--vk">vkontakte</a>
+        <a href="" class="page-footer__icons-item--tw">twitter</a>
+        <a href="" class="page-footer__icons-item--ins">instagram</a>
+      </div>
+      <div class="page-footer__contacts">
+        <a href="" class="page-footer__phone">+7 812 777-55-88</a>
+        <a href="" class="page-footer__mail">info@greenvalley.ru</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
