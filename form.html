@@ -31,7 +31,7 @@
   <form action="" class="booking-form">
     <h1 class="booking-form__title">Бронирование</h1>
     <p class="booking-form__text">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону:<a href="" class="booking-form__phone">+7 812 777</a></p>
-    <fieldset class="booking-block">
+    <fieldset class="booking-block  booking-block--grey">
       <span class="booking-block__step">Шаг 1</span>
       <h2 class="booking-block__title">Дата отдыха</h2>
       <div class="booking-block__input-block">
@@ -49,7 +49,7 @@
         </div>
       </div>
     </fieldset>
-    <fieldset class="booking-block">
+    <fieldset class="booking-block  booking-block--white">
       <div class="booking-block__living-choice">
         <span class="booking-block__step">Шаг 2</span>
         <h2 class="booking-block__title">Место проживания</h2>
@@ -60,6 +60,8 @@
           <input type="radio" name="living-choice" value="cottage" id="cottage">
         </div>
       </div>
+      </fieldset>
+      <fieldset class="booking-block  booking-block--grey">
       <div class="booking-block__living-type">
         <span class="booking-block__step">Шаг 3</span>
         <h2 class="booking-block__title">Тип коттеджа</h2>
@@ -103,28 +105,53 @@
         </ul>
       </div>
     </fieldset>
-    <fieldset class="booking-block">
+    <fieldset class="booking-block  booking-block--white">
       <span class="booking-block__step">Шаг 4</span>
       <h2 class="booking-block__title">Персональная информация</h2>
-      <div class="booking-block__input-info">
-        <input type="text" placeholder="Имя">
+      <div class="input-info">
+        <input type="text" placeholder="Имя" class="input-info__input">
       </div>
-      <div class="booking-block__input-info">
-        <input type="text" placeholder="Фамилия">
+      <div class="input-info">
+        <input type="text" placeholder="Фамилия" class="input-info__input">
       </div>
-      <div class="booking-block__input-with-text">
-        <input type="text" placeholder="Номер телефона">
+      <div class="input-info">
+        <input type="text" placeholder="Номер телефона" class="input-info__input">
         <p class="booking-block__input-dscr">Мы свяжемся с вами в случае необходимости.</p>
       </div>
-      <div class="booking-block__input-with-text">
-        <input type="text" placeholder="E-mail">
+      <div class="input-info">
+        <input type="text" placeholder="E-mail" class="input-info__input">
         <p class="booking-block__input-dscr">На этот адрес мы вышлем вам подтверждение о забронированном номере.</p>
       </div>
     </fieldset>
-    <fieldset class="booking-block">
+    <fieldset class="booking-block  booking-block--grey">
       <span class="booking-block__step">Шаг 5</span>
       <h2 class="booking-block__title">Способ оплаты</h2>
-
+      <div class="booking-block__payment">
+        <h3 class="booking-block__payment-title">К оплате</h3>
+        <span class="booking-block__booking-sum">-</span>
+        <p class="booking-block__error"><span class="booking-block__error-icon"></span>Пожалуйста, выберите дату въезда и выезда, чтобы увидеть сумму к оплате</p>
+      </div>
+      <div class="payment-block">
+        <label for="payment-after" class="booking-block__label">По приезду</label>
+        <input type="radio" name="payment-type" value="payment-after" id="payment-after">
+        <p class="payment-block__input-dscr"></p>
+      </div>
+      <div class="payment-block">
+        <label for="payment-now" class="booking-block__label">Сейчас</label>
+        <input type="radio" name="payment-type" value="payment-now" id="payment-now">
+        <p class="payment-block__input-dscr"></p>
+        <div class="input-info">
+          <h3 class="input-info__title">Номер карты</h3>
+          <input type="text" placeholder="0000-0000-0000-0000" class="input-info__input">
+          <h3 class="input-info__title">Код CVV</h3>
+          <input type="text" placeholder="123" class="input-info__input">
+          <h3 class="input-info__title">Фамилия владельца карты</h3>
+          <input type="text" placeholder="Vladimir Vladimirov" class="input-info__input">
+          <h3 class="input-info__title">Действует до</h3>
+          <input type="text" placeholder="01 / 2016" class="input-info__input">
+        </div>
+      </div>
+      <button type="submit" class="btn  btn_block  btn--btn-green">Отправить форму</button>
     </fieldset>
   </form>
 
