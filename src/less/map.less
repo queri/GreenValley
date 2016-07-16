@@ -1,0 +1,99 @@
+.map {
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      width: 768px;
+    }
+    @media (min-width: 1200px) {
+      width: 1200px;
+    }
+  }
+
+  &__box {
+
+  }
+
+  &__transport {
+    width: 80%;
+    text-align: center;
+    align-self: flex-start;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 20px;
+
+    &:before{
+      content: '';
+      width: 57px;
+      height: 27px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 35%;
+      text-align: left;
+    }
+
+    &--bus {
+      &:before{
+        width: 50px;
+        height: 27px;
+        background-image: url(../img/icon-bus.png);
+      }
+
+      @media (min-width: 768px) {
+        max-width: 90%;
+      }
+      @media (min-width: 1200px) {
+        max-width: 40%;
+        margin-right: 10px;
+      }
+    }
+
+    &--train {
+      &:before{
+        width: 58px;
+        height: 24px;
+        background-image: url(../img/icon-train.png);
+      }
+
+      @media (min-width: 768px) {
+        max-width: 50%;
+      }
+      @media (min-width: 1200px) {
+        max-width: 30%;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__transport-title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: @fz-color;
+    line-height: line-height-base;
+  }
+
+  &__transport-list {
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0;
+
+    @media (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+
+}
+

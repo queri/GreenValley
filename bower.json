@@ -1,0 +1,17 @@
+{
+  "name": "green",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "queri <querimoni@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/queri/GreenValley",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

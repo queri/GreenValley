@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?5566229');
+  src: url('../font/fontello.eot?5566229#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?5566229') format('woff2'),
+       url('../font/fontello.woff?5566229') format('woff'),
+       url('../font/fontello.ttf?5566229') format('truetype'),
+       url('../font/fontello.svg?5566229#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+// .icon-inst:before { content: '\f16d'; } /* '' */
+// .icon-vk:before { content: '\f189'; } /* '' */
+// .icon-fb:before { content: '\f308'; } /* '' */
+
+.page-footer {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      width: 768px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 1200px;
+    }
+  }
+  &__logo-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      width: 24.99%;
+    }
+  }
+  &__logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__address {
+    display: none;
+    font-size: 14px;
+    line-height: 1.3em;
+
+    @media (min-width: 768px) {
+      display: block;
+      width: 16.66%;
+    }
+  }
+
+  &__icons {
+    padding-top: 5px;
+  }
+
+  &__icons-item {
+    font-family: 'fontello';
+    font-size: 0;
+    color: @green;
+    text-decoration: none;
+
+    &:hover{
+      color: @dark-green;
+    }
+
+    &:before{
+      font-size: 22px;
+      padding: 10px 18px;
+
+      @media (min-width: 768px) {
+        padding: 10px
+      }
+    }
+
+    &--vk {
+
+      &:before{
+        content: '\f189';
+        padding-left: 0;
+        padding-right: 10px;
+      }
+    }
+
+    &--ins {
+
+      &:before{
+        content: '\f16d';
+      }
+    }
+
+    &--fb {
+
+      &:before{
+        content: '\f308';
+        padding-right: 0;
+      }
+    }
+  }
+
+  &__contacts {
+    display: none;
+    font-size: 14px;
+
+    a {
+      text-decoration: none;
+      color: #000;
+      line-height: 1.3em;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    @media (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 16.66%;
+    }
+    @media (min-width: 1200px) {
+      flex-basis: 100px;
+      flex-grow: -1;
+    }
+  }
+
+  &__phone {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__mail {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+

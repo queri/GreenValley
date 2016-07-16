@@ -1,0 +1,68 @@
+.page-header {
+
+  &__inner {
+    display: flex;
+  }
+  &__logo {
+    width: 100%;
+    text-align: center;
+
+    @media (min-width: @screen-lg){
+      width: 16.66%;
+      text-align: left;
+    }
+  }
+
+  &__contacts {
+    display: none;
+    @media(min-width: @screen-lg){
+      display: block;
+      width: 41.65%;
+    }
+  }
+
+  &__phone {
+    display: none;
+    @media(min-width: @screen-lg){
+      display: block;
+    }
+  }
+
+  &__address {
+    display: none;
+    @media(min-width: @screen-lg){
+      display: block;
+    }
+  }
+
+  &__btn-wrapper {
+    display: none;
+    @media(min-width: @screen-lg){
+      display: block;
+    }
+  }
+}
+.main-logo {
+
+}
+.main-nav {
+
+  @media(min-width: @screen-lg){
+    width: 33.32%;
+  }
+  &__list {
+    display: none;
+  }
+
+  &__item {
+
+  }
+
+  &__toggler {}
+}
+.btn {
+
+  &--icon-calendar {}
+
+  &--bordered {}
+}
