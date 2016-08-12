@@ -1,0 +1,25 @@
+.living {
+  background-image: url(../img/bg-living.jpg);
+  background-size: cover;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 25px;
+
+    @media (min-width: 768px) {
+      width: 768px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 1200px;
+    }
+
+    .basic-title{
+      color: #fff;
+    }
+  }
+}

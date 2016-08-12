@@ -12,12 +12,12 @@
   <header class="page-header">
     <div class="page-header__inner">
       <div class="page-header__logo">
-        <a href="#" class="main-logo"><img src="img/logo.png" alt=""></a>
+        <a href="index.html" class="main-logo"><img src="img/logo.png" alt=""></a>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Номера</a></li>
-          <li class="main-nav__item"><a href="#">Коттедж</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a href="room-list.html">Номера</a></li>
+          <li class="main-nav__item"><a href="single-room.html">Коттедж</a></li>
           <li class="main-nav__item"><a href="#">Ресторан</a></li>
           <li class="main-nav__item"><a href="#">Отдых</a></li>
           <li class="main-nav__item"><a href="#">Контакты</a></li>
@@ -29,7 +29,7 @@
         <div class="page-header__address">г. Санкт-Петербург, Приморское ш.600</div>
       </div>
       <div class="page-header__btn-wrapper">
-        <a href="" class="btn  btn--icon-calendar">Забронировать</a>
+        <a href="form.html" class="btn  btn--icon-calendar">Забронировать </a>
       </div>
     </div>
   </header>
@@ -72,39 +72,40 @@
           <span class="booking-block__step">Шаг 3</span>
           <h2 class="booking-block__title">Тип коттеджа</h2>
           <div class="booking-block__input-block  booking-block__input-block--wide">
-            <label for="cottage-1" class="booking-block__label  booking-block__label--cottage-1">Флагман</label>
             <input type="radio" name="cottage-type" value="cottage-1" id="cottage-1" checked>
-            <label for="cottage-2" class="booking-block__label  booking-block__label--cottage-2">Озерный</label>
             <input type="radio" name="cottage-type" value="cottage-2" id="cottage-2">
-            <label for="cottage-3" class="booking-block__label  booking-block__label--cottage-3">Ольховка</label>
             <input type="radio" name="cottage-type" value="cottage-3" id="cottage-3">
-            <label for="cottage-4" class="booking-block__label  booking-block__label--cottage-4">Портовый</label>
             <input type="radio" name="cottage-type" value="cottage-4" id="cottage-4">
-            <!-- сначала инпуты потом лейблы, список сюдаже-->
+            <label for="cottage-1" class="booking-block__label  booking-block__label--cottage-1">Флагман</label>
+            <label for="cottage-2" class="booking-block__label  booking-block__label--cottage-2">Озерный</label>
+            <label for="cottage-3" class="booking-block__label  booking-block__label--cottage-3">Ольховка</label>
+            <label for="cottage-4" class="booking-block__label  booking-block__label--cottage-4">Портовый</label>
+
+            <ul class="booking-block__type-list">
+            <!-- внутри дива , 4 списка с разными модификаторами-->
+              <li class="booking-block__type-list-item"></li>
+              <li class="booking-block__type-list-item"></li>
+              <li class="booking-block__type-list-item"></li>
+              <li class="booking-block__type-list-item"></li>
+              <li class="booking-block__type-list-item"></li>
+            </ul>
           </div>
-          <ul class="booking-block__type-list">
-          <!-- внутри дива , 4 списка с разными модификаторами-->
-            <li class="booking-block__type-list-item"></li>
-            <li class="booking-block__type-list-item"></li>
-            <li class="booking-block__type-list-item"></li>
-            <li class="booking-block__type-list-item"></li>
-            <li class="booking-block__type-list-item"></li>
-          </ul>
         </div>
       <div class="booking-block__living-type">
         <span class="booking-block__step">Шаг 3</span>
         <h2 class="booking-block__title">Тип номера</h2>
         <div class="booking-block__input-block  booking-block__input-block--wide">
-          <label for="room-1" class="booking-block__label  booking-block__label--room-1">Эконом</label>
           <input type="radio" name="room-type" value="room-1" id="room-1">
-          <label for="room-2" class="booking-block__label  booking-block__label--room-2">Стандарт</label>
           <input type="radio" name="room-type" value="room-2" id="room-2">
-          <label for="room-3" class="booking-block__label  booking-block__label--room-3">Стандарт+</label>
           <input type="radio" name="room-type" value="room-3" id="room-3">
-          <label for="room-4" class="booking-block__label  booking-block__label--room-4">Люкс</label>
           <input type="radio" name="room-type" value="room-4" id="room-4">
+          <label for="room-1" class="booking-block__label  booking-block__label--room-1">Эконом</label>
+          <label for="room-2" class="booking-block__label  booking-block__label--room-2">Стандарт</label>
+          <label for="room-3" class="booking-block__label  booking-block__label--room-3">Стандарт+</label>
+          <label for="room-4" class="booking-block__label  booking-block__label--room-4">Люкс</label>
         </div>
         <ul class="booking-block__type-list">
+        <!-- внутри дива , 4 списка с разными модификаторами-->
           <li class="booking-block__type-list-item"></li>
           <li class="booking-block__type-list-item"></li>
           <li class="booking-block__type-list-item"></li>
@@ -166,15 +167,19 @@
   <footer class="page-footer">
     <div class="page-footer__inner">
       <div class="page-footer__address">г. Санкт-Петербург<br/>Приморское ш.600</div>
-      <a href="" class="page-footer__logo"><img src=" " alt=""></a>
-      <div class="page-footer__icons">
-        <a href="" class="page-footer__icons-item  page-footer__icons-item--vk">vkontakte</a>
-        <a href="" class="page-footer__icons-item  page-footer__icons-item--tw">twitter</a>
-        <a href="" class="page-footer__icons-item  page-footer__icons-item--ins">instagram</a>
+      <div class="page-footer__logo-wrapper">
+        <a href="" class="page-footer__logo">
+          <img src="img/logo.png" alt="">
+        </a>
+        <div class="page-footer__icons">
+          <a href="" class="page-footer__icons-item  page-footer__icons-item--vk">vkontakte</a>
+          <a href="" class="page-footer__icons-item  page-footer__icons-item--ins">instagram</a>
+          <a href="" class="page-footer__icons-item  page-footer__icons-item--fb">facebook</a>
+        </div>
       </div>
       <div class="page-footer__contacts">
         <a href="tel:+78127775588" class="page-footer__phone">+7 812 777-55-88</a>
-        <a href="" class="page-footer__mail">info@greenvalley.ru</a>
+        <a href="mailto:info@greenvalley.ru" class="page-footer__mail">info@greenvalley.ru</a>
       </div>
     </div>
   </footer>

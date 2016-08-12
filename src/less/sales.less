@@ -1,0 +1,38 @@
+.sales {
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      width: 768px;
+    }
+    @media (min-width: 1200px) {
+      width: 1200px;
+    }
+  }
+  &__slide {
+    background-position: 50% 35%;
+    background-size: cover;
+    width: 100%;
+    min-height: 340px;
+    display: flex;
+    align-items: flex-end;
+  }
+  &__text-wrapper {
+    width: 25%;
+    background-color: rgba(255,255,255,.9);
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 15px;
+    font-size: 14px;
+    color: #191919;
+  }
+  &__text-wrapper-title {
+    text-transform: uppercase;
+    color: @orange;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,116 @@
+.reviews {
+  background-image: url(../img/bg-reviews.jpg);
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px auto;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    @media (min-width: 768px) {
+      width: 768px;
+    }
+    @media (min-width: 1200px) {
+      width: 1200px;
+    }
+  }
+}
+
+.review-item {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 41.65%;
+  text-align: center;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #fff;
+  min-height: 280px;
+  position: relative;
+  margin-bottom: 30px;
+
+  &__sign {
+    margin: 0 auto;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__photo-wrapper{
+    width: 84px;
+    height: 84px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+  &__photo {
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-bottom: 10px;
+    padding-top: 2px;
+  }
+  &__name {
+    width: 100%;
+    font-weight: 500;
+    color: #191919;
+    line-height: @line-height-base;
+  }
+  &__icon {
+  }
+  &__date {
+    text-align: center;
+    margin: 0 auto;
+    line-height: @line-height-base;
+    font-size: 14px;
+    font-weight: 500;
+    color: #191919;
+  }
+}
+.social-icon {
+  font-family: 'fontello';
+    font-size: 0;
+    color: #597da3;
+    text-decoration: none;
+
+    &:hover{
+      color: #305a87;
+    }
+
+    &:before{
+      font-size: 22px;
+      padding: 10px 18px;
+
+      @media (min-width: 768px) {
+        padding: 10px
+      }
+    }
+
+    &--vk {
+      &:before{
+        content: '\f189';
+      }
+    }
+     &--ins {
+
+      &:before{
+        content: '\f16d';
+      }
+    }
+
+    &--fb {
+
+      &:before{
+        content: '\f308';
+      }
+    }
+}

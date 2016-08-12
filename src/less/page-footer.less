@@ -16,6 +16,8 @@
 // .icon-fb:before { content: '\f308'; } /* '' */
 
 .page-footer {
+  padding-top: 15px;
+  padding-bottom: 10px;
   &__inner {
     display: flex;
     align-items: center;
@@ -108,7 +110,7 @@
   &__contacts {
     display: none;
     font-size: 14px;
-
+    justify-content: flex-end;
     a {
       text-decoration: none;
       color: #000;
@@ -124,8 +126,7 @@
       max-width: 16.66%;
     }
     @media (min-width: 1200px) {
-      flex-basis: 100px;
-      flex-grow: -1;
+      width: 16.66%;
     }
   }
 
