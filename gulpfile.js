@@ -1,16 +1,12 @@
-const   gulp = require('gulp'),
-    less = require('gulp-less'),
-    path = require('path'),
-    minify = require('gulp-clean-css'),
-    rename = require('gulp-rename'),
-    autoprefixer =  require('gulp-autoprefixer'),
-    csscomb = require('gulp-csscomb'),
-    concat = require('gulp-concat'),
-    uglify = require('gulp-uglify'),
-    browserify =    require('browserify'),
-    browserSync =       require("browser-sync"),
-    reload =            browserSync.reload;
-    gulpBrowser =   require("gulp-browser");
+const gulp = require('gulp'),
+      less = require('gulp-less'),
+      path = require('path'),
+      minify = require('gulp-clean-css'),
+      rename = require('gulp-rename'),
+      autoprefixer =  require('gulp-autoprefixer'),
+      csscomb = require('gulp-csscomb'),
+      concat = require('gulp-concat'),
+      uglify = require('gulp-uglify');
 
 
 // CSS
@@ -24,8 +20,7 @@ gulp.task('css', function(){
   .pipe(gulp.dest('build/css'))
   .pipe(minify())
   .pipe(rename({ suffix: '.min' }))
-  .pipe(gulp.dest('build/css'))
-  .pipe(reload({stream: true}));
+  .pipe(gulp.dest('build/css'));
 });
 // JS
 // gulp.task('js', function(){
@@ -38,11 +33,10 @@ gulp.task('css', function(){
 // })
 
 // HTML
-// gulp.task('html', function(){
-//   return gulp.src('src/*.html')
-//   .pipe(gulp.dest('build/'))
-//   .pipe(reload({stream: true}));
-// })
+gulp.task('html', function(){
+  return gulp.src('src/*.html')
+  .pipe(gulp.dest('build/'));
+})
 
 // gulp.task('server', ['watch'], function(){
 //  browserSync({
@@ -59,6 +53,7 @@ gulp.task('css', function(){
 // Watcher
 gulp.task('watch', function(){
   gulp.watch('src/less/*.less', ['css'])
+  gulp.watch('src/*.html', ['html'])
 });
 
 // gulp.task('js2', function() {
