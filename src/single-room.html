@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,500&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Green Valley</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
           <li class="main-nav__item"><a href="#">Отдых</a></li>
           <li class="main-nav__item"><a href="#">Контакты</a></li>
         </ul>
-        <div class="main-nav__toggler" id="toggler"><span></span></div>
+        <a href="" class="main-nav__toggler" id="toggler"><span></span></a>
       </nav>
       <div class="page-header__contacts">
         <a href="tel:+78127775588" class="page-header__phone">+7 812 777-55-88</a>
@@ -31,6 +31,17 @@
       <div class="page-header__btn-wrapper">
         <a href="form.html" class="btn  btn--icon-calendar">Забронировать </a>
       </div>
+    </div>
+    <div class="mobile-nav">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item  main-nav__item--active"><a href="room-list.html">Номера</a></li>
+          <li class="main-nav__item"><a href="single-room.html">Коттедж</a></li>
+          <li class="main-nav__item"><a href="#">Ресторан</a></li>
+          <li class="main-nav__item"><a href="#">Отдых</a></li>
+          <li class="main-nav__item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -61,7 +72,7 @@
         </ul>
       </div>
       <div class="single-room__price">
-        <a href="" class="btn btn--icon-calendar">Забронировать</a>
+        <a href="form.html" class="btn btn--icon-calendar">Забронировать</a>
         <span class="price">от <b>4000</b> руб./сутки</span>
       </div>
     </div>
@@ -70,17 +81,17 @@
   <section class="rooms-previews rooms-previews--bg-gray">
     <div class="rooms-previews__inner">
       <h1 class="sr-only">Другие номера</h1>
-      <a href="#" class="rooms-previews__item">
+      <a href="single-room.html" class="rooms-previews__item">
         <img src="img/img-standart.jpg" alt="" class="rooms-previews__photo">
         <h2 class="rooms-previews__title">Стандарт</h2>
         <span class="price">от <b>4000</b> руб./сутки</span>
       </a>
-      <a href="#" class="rooms-previews__item">
+      <a href="single-room.html" class="rooms-previews__item">
         <img src="img/img-standart+.jpg" alt="" class="rooms-previews__photo">
         <h2 class="rooms-previews__title">Стандарт+</h2>
         <span class="price">от <b>4000</b> руб./сутки</span>
       </a>
-      <a href="#" class="rooms-previews__item">
+      <a href="single-room.html" class="rooms-previews__item">
         <img src="img/img-lux.jpg" alt="" class="rooms-previews__photo">
         <h2 class="rooms-previews__title">Люкс</h2>
         <span class="price">от <b>4000</b> руб./сутки</span>
@@ -109,6 +120,6 @@
   </footer>
 
   <script src="../node_modules/jquery/dist/jquery.js"></script>
-  <script src="../src/js/live.js"></script>
+  <script src="../src/js/app.js"></script>
 </body>
 </html>

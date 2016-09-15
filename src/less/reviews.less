@@ -22,7 +22,7 @@
   display: inline-flex;
   align-items: center;
   flex-wrap: wrap;
-  width: 41.65%;
+
   text-align: center;
   justify-content: center;
   padding-top: 80px;
@@ -33,7 +33,9 @@
   min-height: 280px;
   position: relative;
   margin-bottom: 30px;
-
+  @media(min-width: @screen-lg){
+    width: 41.65%;
+  }
   &__sign {
     margin: 0 auto;
     position: absolute;

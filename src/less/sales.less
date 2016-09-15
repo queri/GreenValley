@@ -21,13 +21,15 @@
     align-items: flex-end;
   }
   &__text-wrapper {
-    width: 25%;
     background-color: rgba(255,255,255,.9);
     margin-bottom: 20px;
     text-align: left;
     padding: 15px;
     font-size: 14px;
     color: #191919;
+    @media (min-width: 1200px) {
+      width: 25%;
+    }
   }
   &__text-wrapper-title {
     text-transform: uppercase;

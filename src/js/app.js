@@ -14,4 +14,10 @@ $(document).ready(function() {
     $('ul#'+newType).addClass('booking-block__type-list--visible')
   });
 
+  $('#toggler').on('click', function(e){
+      e.preventDefault()
+      $(this).toggleClass('main-nav__toggler--close')
+      $('.mobile-nav').toggleClass('mobile-nav--visible')
+  });
+
 });
