@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,500&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
   <title>Green Valley</title>
 </head>
 <body>
@@ -47,24 +48,25 @@
 
   <section class="relax">
     <h1 class="sr-only">Отдых</h1>
-    <ul class="relax__tabs">
-      <li><a href="#" class="relax__tab-link relax__tab-link--active">Семейный отдых</a></li>
-      <li><a href="#" class="relax__tab-link">Корпоративный отдых</a></li>
-    </ul>
-    <div class="relax__slider-images">
+
+    <div class="relax__slider-images" id="owl-slider-1">
       <div class="relax__slider-images-item">
         <div class="relax__slider-images-text">
           <h2 class="relax__slider-images-title"><span>Семейный отдых на берегу</span> <span>Финского залива</span></h2>
           <p><span>Green valley - это современная база отдыха </span><span>в курортном районе для здорового отдыха всей семьей</span></p>
         </div>
       </div>
-<!--       <div class="relax__slider-images-item">
+      <div class="relax__slider-images-item">
         <div class="relax__slider-images-text">
           <h2 class="relax__slider-images-title"><span>Корпоративный отдых на берегу</span><span>Финского залива</span></h2>
           <p><span>Green valley - это современная база отдыха </span><span>в курортном районе для здорового отдыха всей семьей</span></p>
         </div>
-      </div> -->
+      </div>
     </div>
+    <ul class="relax__tabs">
+      <li><a href="" class="carousel-prev  relax__tab-link  relax__tab-link--active">Семейный отдых</a></li>
+      <li><a href="" class="carousel-next  relax__tab-link">Корпоративный отдых</a></li>
+    </ul>
     <div class="relax__slider-options">
       <div class="relax__slider-options-item">
         <div class="relax__slider-text-wrapper">
@@ -221,7 +223,10 @@
     </div>
   </footer>
 
-  <script src="../node_modules/jquery/dist/jquery.js"></script>
-  <script src="../src/js/app.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/app.js"></script>
+
+
 </body>
 </html>
